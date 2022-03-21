@@ -150,8 +150,8 @@ def dashboard(request):
 
     userprofile = UserProfile.objects.get(user_id=request.user.id)
     context = {
-        'orders_count' : orders_count,
-        'userprofile' : userprofile,
+        'orders_count': orders_count,
+        'userprofile': userprofile,
     }
     return render(request, 'accounts/dashboard.html', context)
 
